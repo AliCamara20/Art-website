@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+}
+ img{
+    max-inline-size: 100%;
+    block-size: auto;
+ }
+
+header{
+    position: relative;
+    padding: 1em 0;
+}
+
+
+
+ .main-header, .about{
+    font-size: clamp(1.2rem, .875rem + 1vw, 3rem);
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: .5em 1em;
+    display: block;
+
+    
+}
+
+.main-header:hover, .about:hover{
+    background-color: #ccc;
+
+}
+
+.about{
+    text-decoration: none;
+    color: black;
+}
+
+.about h1 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }  
+
+
+
+.grid img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+ .aboutMe{
+    text-align: center;
+    padding: 3em 0 5em ;
+    background-color: #eee;
+}
+
+.aboutMe h1{
+    font-size: clamp(2rem, .875rem + 1vw, 4rem);
+    margin: 1em 0;
+}
+
+.aboutMe img{
+    width: 600px;
+    aspect-ratio: 1/ 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.aboutMe p{
+    font-size: clamp(1.2rem, .875rem + 1vw, 2rem);
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.contact{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin:  0 auto;
+}
+
+form label{
+    display: block;
+    font-size: clamp(1.2rem, .875rem + 1vw, 2rem) ;
+    margin-bottom: .5em;
+    font-weight: 600;
+
+}
+
+form input[type = "text"], input[type = "email"], input[type = "submit"]{
+    margin-bottom: 30px; 
+    text-align: center;
+    font-size: clamp(1rem, .875rem + 1vw, 2rem) ;
+    border: 1px solid #ddd;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: .5em 1em;
+}
+
+form #submit{
+    background-color: #555;
+    color: white;
+    width: 100%;
+}
+
+.contact h3:not(.section_header) {
+    color: #555 !important;
+    font-size: clamp(1rem, .875rem + 1vw, 2rem) ;
+    margin: 50px 0;
+    font-weight: 100;
+}
+.section_header{
+    color: red;
+    font-weight: 600;
+    margin: 2em 0;
+}
+.contact h3 a{
+    color: #555;
+    text-decoration: underline #333 solid 3px;
+}
+
+.toggle-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 30px 0;
+   
+    
+}
+
+.section_header{
+    color: red;
+    font-weight: 600;
+}
+.toggle-button button{
+    font-size: clamp(1.3rem, .875rem + 1vw, 2.5rem) ;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.pad{
+    padding: .7em 1em ;
+}
+
+
+
+@media(max-width: 600px) {
+    .grids{
+        grid-template-columns: 1fr;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    
+}
